@@ -29,7 +29,20 @@ const io = new SocketIOServer(httpServer, {
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:5073"],
+  origin: (origin, callback) => {
+    const allowedOrigins = [
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "http://localhost:5073",
+      process.env.FRONTEND_URL,
+    ].filter(Boolean);
+    
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
