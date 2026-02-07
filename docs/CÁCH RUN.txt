@@ -1,0 +1,118 @@
+═══════════════════════════════════════════════════════════════
+   DELTA STRESS LENS - HƯỚNG DẪN CHẠY ỨNG DỤNG
+═══════════════════════════════════════════════════════════════
+
+📌 CÁCH CHẠY NHANH NHẤT (1 Click)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Mở Command Prompt / PowerShell
+2. Cd tới folder dự án:
+   cd "c:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta"
+3. Chạy:
+   .\start-all.bat
+
+→ Sẽ tự động mở 2 terminal:
+   - Backend API: http://localhost:3001 ✅
+   - Frontend: http://localhost:5073 ✅
+
+4. Mở browser: http://localhost:5073
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 CÁCH CHẠY THỦ CÔNG (2 Terminal)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Terminal 1 - BACKEND:
+─────────────────────
+cd "c:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend"
+npm run dev
+→ Backend sẽ chạy trên: http://localhost:3001
+
+
+Terminal 2 - FRONTEND:
+──────────────────────
+cd "c:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta"
+npm run dev
+→ Frontend sẽ chạy trên: http://localhost:5073
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔐 ĐĂNG NHẬP (Demo Account)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Số điện thoại: 0909123456
+Mật khẩu:      12345678
+Vai trò:       FARMER
+
+Hoặc đăng ký tài khoản mới với bất kỳ số điện thoại nào (định dạng: 0xx xxxxxxx)
+Mật khẩu tối thiểu: 8 ký tự
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗺️ CÁC TRANG CHÍNH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Dashboard (/dashboard)
+   - Trang tổng quan
+   - Điều hướng đến các phần chính
+
+2. Stress Map (/dashboard/stress-map)
+   - Bản đồ interactive Leaflet
+   - 3 tỉnh Mekong: Cần Thơ, An Giang, Cà Mau
+   - Chỉ số stress hợp chất (salinity, heat, flood, pollution)
+   - Click tỉnh → hiện detail panel bên phải
+
+3. Inbox (/dashboard/inbox)
+   - Tin nhắn từ nông dân
+   - Danh sách messages
+   - Reply functionality (cho gov account)
+
+4. Knowledge Base (/dashboard/knowledge)
+   - Thông tin hướng dẫn
+
+5. Contact (/dashboard/contact)
+   - Liên hệ
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ YÊU CẦU HỆ THỐNG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Node.js 18+ (kiểm tra: node -v)
+✅ npm 9+ (kiểm tra: npm -v)
+✅ MongoDB 8.2.4 Local (đã cài - chạy tự động khi khởi động)
+✅ Windows / macOS / Linux
+
+🔧 MONGODB LOCAL SETUP (ĐÃ HOÀN TẤT):
+   • Download từ: https://www.mongodb.com/try/download/community
+   • Phiên bản: 8.2.4 2008R2Plus SSL (64-bit)
+   • Cài với tuỳ chọn "Install MongoDB as a Service"
+   • Kết nối: mongodb://127.0.0.1:27017/agritech_db
+   • Tự động chạy khi khởi động máy
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "Failed to fetch" khi đăng nhập
+   → Backend chưa chạy → Chạy Terminal 1 (Backend) trước
+   → Hoặc MongoDB local chưa chạy → Khởi động MongoDB Service
+
+❌ MongoDB Connection Error (ECONNREFUSED)
+   → Kiểm tra MongoDB đã chạy: mongod --version
+   → Hoặc bật MongoDB Service từ Services (Windows: Win+R → services.msc → tìm MongoDB → Start)
+   → Nếu không thấy service → Cài lại MongoDB với "Install as Service"
+
+❌ Port 3001 / 5073 đã được sử dụng
+   → Kill process: taskkill /F /IM node.exe
+   → Rồi chạy lại
+
+❌ Module not found
+   → Cài lại dependencies: npm install
+   → Chạy ở cả frontend và backend folder
+   → npm run build lại
+
+═══════════════════════════════════════════════════════════════Mở Chorme vào link: http://localhost:3000
+
+

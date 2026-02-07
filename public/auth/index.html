@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta Stress Lens - Access System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- AUTH CONTAINER -->
+  <div class="auth-container">
+    <div class="auth-content">
+      <h1 class="title">DELTA STRESS LENS</h1>
+      <p class="subtitle">Environmental Risk Management System</p>
+
+      <!-- FORM -->
+      <form id="authForm" class="auth-form">
+        <div class="input-group">
+          <label>Phone Number</label>
+          <input 
+            id="phoneInput" 
+            type="tel" 
+            placeholder="0123456789" 
+            pattern="0\d{9,10}"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input 
+            id="passwordInput" 
+            type="password" 
+            placeholder="Min. 8 characters" 
+            minlength="8"
+            required
+          />
+        </div>
+
+        <button id="submitBtn" type="submit" class="btn-primary">
+          LOGIN
+        </button>
+      </form>
+
+      <!-- TOGGLE MODE -->
+      <p class="toggle-mode">
+        Don't have an account? 
+        <a href="#" id="toggleLink">Create one</a>
+      </p>
+
+      <div id="errorMsg" class="error-msg"></div>
+    </div>
+  </div>
+
+  <!-- INTRO OVERLAY (Rocket Animation) -->
+  <div id="introOverlay" class="intro-overlay hidden">
+    <div class="intro-content">
+      <h2>🚀 SYSTEM INITIALIZED</h2>
+      <p>Click anywhere to launch...</p>
+
+      <!-- Rockets -->
+      <div class="rocket-container">
+        <img class="rocket r1" src="rocket.svg" alt="Rocket" />
+        <img class="rocket r2" src="rocket.svg" alt="Rocket" />
+        <img class="rocket r3" src="rocket.svg" alt="Rocket" />
+      </div>
+    </div>
+    <!-- Fallback audio (will fail silently if not present) -->
+    <audio id="launchSound">
+      <source src="data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAAB9AAACABAAZGF0YQIAAAAAAA==" type="audio/wav">
+    </audio>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

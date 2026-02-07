@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="200" height="400">
+  <!-- Rocket body -->
+  <rect x="75" y="50" width="50" height="200" fill="#FF6B6B" rx="5"/>
+  
+  <!-- Rocket tip -->
+  <polygon points="100,20 85,50 115,50" fill="#FFD93D"/>
+  
+  <!-- Window -->
+  <circle cx="100" cy="80" r="8" fill="#4ECDC4"/>
+  
+  <!-- Left fin -->
+  <polygon points="75,200 50,280 75,260" fill="#1ABC9C"/>
+  
+  <!-- Right fin -->
+  <polygon points="125,200 150,280 125,260" fill="#1ABC9C"/>
+  
+  <!-- Flame -->
+  <g opacity="0.8">
+    <polygon points="90,250 85,320 100,280" fill="#FFD93D"/>
+    <polygon points="110,250 115,320 100,280" fill="#FF6B6B"/>
+  </g>
+  
+  <!-- Glow effect -->
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#00F3FF" stroke-width="2" opacity="0.3"/>
+</svg>
