@@ -13,9 +13,25 @@ import { authMiddleware } from './middleware/auth';
 
 dotenv.config();
 
+// ✅ Validation env variables NGAY TỪ ĐẦU
+const requiredEnvs = ['MONGO_URI', 'JWT_SECRET'];
+const missingEnvs = requiredEnvs.filter(env => !process.env[env]);
+
+if (missingEnvs.length > 0) {
+  console.error('❌ MISSING ENV VARIABLES:', missingEnvs.join(', '));
+  console.error('CURRENT ENV:', {
+    MONGO_URI: process.env.MONGO_URI ? '✅ SET' : '❌ MISSING',
+    JWT_SECRET: process.env.JWT_SECRET ? '✅ SET' : '❌ MISSING',
+    FRONTEND_URL: process.env.FRONTEND_URL || 'not set',
+    NODE_ENV: process.env.NODE_ENV || 'not set'
+  });
+  process.exit(1);
+}
+
 // Connect to MongoDB
 connectDB().catch(err => {
   console.error('Failed to connect to MongoDB:', err);
+  process.exit(1); // EXIT on DB fail
 });
 
 const app = express();
