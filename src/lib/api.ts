@@ -1,7 +1,12 @@
 import axios from 'axios';
 
-// URL của Backend (Port 5000)
-const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000/api';
+// Backend URL PHẢI được set trong Vercel Environment Variables
+// NEXT_PUBLIC_BACKEND_URL = https://mekong-production.up.railway.app/api
+const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL!;
+
+if (!API_URL) {
+  console.error('❌ NEXT_PUBLIC_BACKEND_URL is not set in environment variables');
+}
 
 const api = axios.create({
   baseURL: API_URL,
