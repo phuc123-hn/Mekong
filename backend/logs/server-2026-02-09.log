@@ -281,3 +281,114 @@
 ║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
 ╚════════════════════════════════════════╝
   
+[2026-02-09T04:57:20.799Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:57:20.802Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:57:20.803Z] [INFO]   GET → /
+[2026-02-09T04:57:20.803Z] [INFO]   GET → /health
+[2026-02-09T04:57:20.804Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:57:20.804Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:57:20.805Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:57:20.805Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:57:20.806Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:57:20.806Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:57:20.807Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:57:20.807Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:57:20.808Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:57:20.808Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:57:20.808Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:57:20.809Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:57:20.813Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:58:04.948Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:58:04.951Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:58:04.953Z] [INFO]   GET → /
+[2026-02-09T04:58:04.954Z] [INFO]   GET → /health
+[2026-02-09T04:58:04.955Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:58:04.956Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:58:04.956Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:58:04.957Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:58:04.958Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:58:04.959Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:58:04.959Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:58:04.960Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:58:04.961Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:58:04.962Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:58:04.962Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:58:04.963Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:59:08.782Z] [INFO] 👉 [OPTIONS] /auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T04:59:08.796Z] [INFO] ✓ [OPTIONS] /auth/register → 204 (15ms)
+[2026-02-09T04:59:08.802Z] [INFO] 👉 [POST] /auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T04:59:08.854Z] [ERROR] 🔴 404 NOT FOUND: POST /auth/register
+[2026-02-09T04:59:08.866Z] [ERROR] Headers: {
+  "host": "localhost:5000",
+  "connection": "keep-alive",
+  "content-length": "87",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0",
+  "accept": "application/json, text/plain, */*",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "origin": "http://localhost:5073",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5073/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-US,en;q=0.9",
+  "cookie": "connect.sid=s%3AeqVaILHVAKPw3iAw6JkKEXhNI9K2_nHg.u%2FUOqi3pO2JZ5PXD3izgBkuEbBYkkNUdFle7pLmlD4Q; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInJvbGUiOiJHT1ZFUk5NRU5UIiwiaWF0IjoxNzcwMTExOTk1LCJleHAiOjE3NzA3MTY3OTV9.qf5Q79_kr-EU5DuMPMjIQRKjlwCTkVUS9H4cy03uqIQ"
+}
+[2026-02-09T04:59:08.870Z] [ERROR] Available routes: /, /health, ^\/api\/auth\//register, ^\/api\/auth\//login, ^\/api\/data\//, ^\/api\/data\//update, ^\/api\/messages\//inbox, ^\/api\/messages\//gov-inbox, ^\/api\/messages\//send, ^\/api\/messages\//mark-read/:messageId, ^\/api\/messages\//:messageId, ^\/api\/forecasts\//, ^\/api\/forecasts\//broadcast, ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:59:08.884Z] [ERROR] ✓ [POST] /auth/register → 404 (82ms)
+[2026-02-09T04:59:22.007Z] [INFO] 👉 [OPTIONS] /auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T04:59:22.008Z] [INFO] ✓ [OPTIONS] /auth/register → 204 (1ms)
+[2026-02-09T04:59:22.012Z] [INFO] 👉 [POST] /auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T04:59:22.038Z] [ERROR] 🔴 404 NOT FOUND: POST /auth/register
+[2026-02-09T04:59:22.048Z] [ERROR] Headers: {
+  "host": "localhost:5000",
+  "connection": "keep-alive",
+  "content-length": "86",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0",
+  "accept": "application/json, text/plain, */*",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\"",
+  "content-type": "application/json",
+  "sec-ch-ua-mobile": "?0",
+  "origin": "http://localhost:5073",
+  "sec-fetch-site": "same-site",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "referer": "http://localhost:5073/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-US,en;q=0.9",
+  "cookie": "connect.sid=s%3AeqVaILHVAKPw3iAw6JkKEXhNI9K2_nHg.u%2FUOqi3pO2JZ5PXD3izgBkuEbBYkkNUdFle7pLmlD4Q; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInJvbGUiOiJHT1ZFUk5NRU5UIiwiaWF0IjoxNzcwMTExOTk1LCJleHAiOjE3NzA3MTY3OTV9.qf5Q79_kr-EU5DuMPMjIQRKjlwCTkVUS9H4cy03uqIQ"
+}
+[2026-02-09T04:59:22.052Z] [ERROR] Available routes: /, /health, ^\/api\/auth\//register, ^\/api\/auth\//login, ^\/api\/data\//, ^\/api\/data\//update, ^\/api\/messages\//inbox, ^\/api\/messages\//gov-inbox, ^\/api\/messages\//send, ^\/api\/messages\//mark-read/:messageId, ^\/api\/messages\//:messageId, ^\/api\/forecasts\//, ^\/api\/forecasts\//broadcast, ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:59:22.060Z] [ERROR] ✓ [POST] /auth/register → 404 (48ms)
+[2026-02-09T05:00:11.176Z] [INFO] 👉 [POST] /api/auth/login {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) W"
+}
+[2026-02-09T05:00:11.195Z] [ERROR] ✓ [POST] /login → 401 (19ms)
+[2026-02-09T05:00:34.230Z] [INFO] 👉 [GET] /health {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) W"
+}
+[2026-02-09T05:00:34.233Z] [INFO] ✓ [GET] /health → 200 (3ms)

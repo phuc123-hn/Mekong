@@ -27,7 +27,7 @@ export default function GovernmentInbox() {
 
   const fetchMessages = useCallback(async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/messages/gov-inbox', {
+      const res = await fetch('http://localhost:5000/api/messages/gov-inbox', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await res.json();
@@ -53,12 +53,13 @@ export default function GovernmentInbox() {
 
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:3001/api/messages/reply', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
+const res = await fetch('http://localhost:5000/api/messages/reply', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      credentials: 'include',
         body: JSON.stringify({
           message_id: selectedMsg.id,
           response_content: reply

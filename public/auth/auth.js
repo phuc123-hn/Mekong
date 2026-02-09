@@ -45,12 +45,13 @@ authForm.addEventListener('submit', async (e) => {
   // API Call
   try {
     const endpoint = isLogin ? '/api/auth/login' : '/api/auth/register';
-    const backendUrl = 'http://localhost:3001';
+    const backendUrl = 'http://localhost:5000';
     
     const res = await fetch(`${backendUrl}${endpoint}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ phone, password })
+      body: JSON.stringify({ phone, password }),
+      credentials: 'include'
     });
 
     const data = await res.json();
@@ -69,7 +70,7 @@ authForm.addEventListener('submit', async (e) => {
     // Show intro
     showIntro();
   } catch (err) {
-    showError('Network error. Make sure backend is running on localhost:3001');
+    showError('Network error. Make sure backend is running on localhost:5000');
     console.error(err);
     submitBtn.disabled = false;
     submitBtn.textContent = isLogin ? 'LOGIN' : 'REGISTER';

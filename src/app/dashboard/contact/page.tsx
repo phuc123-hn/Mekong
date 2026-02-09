@@ -16,8 +16,12 @@ export default function ContactPage() {
   const fetchMessages = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:3001/api/messages/inbox', {
-        headers: { 'Authorization': `Bearer ${token}` }
+      const res = await fetch('http://localhost:5000/api/messages/inbox', {
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}` 
+        },
+        credentials: 'include'
       });
       const data = await res.json();
       setMessages(data);
@@ -41,12 +45,13 @@ export default function ContactPage() {
     setLoading(true);
 
     try {
-      const res = await fetch('http://localhost:3001/api/messages/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        },
+const res = await fetch('http://localhost:5000/api/messages/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      credentials: 'include',
         body: JSON.stringify({
           name: formData.name || user?.phone,
           phone: formData.phone,

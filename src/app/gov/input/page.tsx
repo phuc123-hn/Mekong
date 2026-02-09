@@ -40,12 +40,13 @@ export default function DataInputPage() {
     setLoading(true);
 
     try {
-      const res = await fetch('http://localhost:3001/api/data/update', {
+      const res = await fetch('http://localhost:5000/api/data/update', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
+        credentials: 'include',
         body: JSON.stringify(formData)
       });
 
@@ -68,12 +69,13 @@ export default function DataInputPage() {
     setLoading(true);
 
     try {
-      const res = await fetch('http://localhost:3001/api/forecasts/broadcast', {
+      const res = await fetch('http://localhost:5000/api/forecasts/broadcast', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
         },
+        credentials: 'include',
         body: JSON.stringify(forecast)
       });
 
