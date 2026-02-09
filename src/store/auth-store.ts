@@ -69,7 +69,7 @@ export const useAuthStore = create<AuthState>()(
         try {
           console.log('🔐 Logging in with phone:', phone);
           
-          const response = await api.post('/auth/login', { 
+          const response = await api.post('/api/auth/login', { 
             phone, 
             password 
           });
@@ -115,7 +115,7 @@ export const useAuthStore = create<AuthState>()(
         try {
           console.log('📝 Registering with phone:', data.phone);
           
-          const response = await api.post('/auth/register', {
+          const response = await api.post('/api/auth/register', {
             phone: data.phone,
             password: data.password,
             fullName: data.fullName,
