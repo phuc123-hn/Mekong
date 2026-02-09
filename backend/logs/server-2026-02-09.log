@@ -392,3 +392,69 @@
   "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) W"
 }
 [2026-02-09T05:00:34.233Z] [INFO] ✓ [GET] /health → 200 (3ms)
+[2026-02-09T05:09:17.834Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T05:09:17.837Z] [INFO] 📋 Registered routes:
+[2026-02-09T05:09:17.838Z] [INFO]   GET → /
+[2026-02-09T05:09:17.839Z] [INFO]   GET → /health
+[2026-02-09T05:09:17.839Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T05:09:17.840Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T05:09:17.840Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T05:09:17.841Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T05:09:17.842Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T05:09:17.842Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T05:09:17.843Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T05:09:17.843Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T05:09:17.843Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T05:09:17.844Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T05:09:17.844Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T05:09:17.844Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T05:09:17.851Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T05:12:20.941Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T05:12:20.946Z] [INFO] 📋 Registered routes:
+[2026-02-09T05:12:20.949Z] [INFO]   GET → /
+[2026-02-09T05:12:20.950Z] [INFO]   GET → /health
+[2026-02-09T05:12:20.951Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T05:12:20.951Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T05:12:20.952Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T05:12:20.953Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T05:12:20.954Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T05:12:20.955Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T05:12:20.958Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T05:12:20.958Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T05:12:20.960Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T05:12:20.961Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T05:12:20.962Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T05:12:20.963Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T05:12:20.975Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T05:12:57.488Z] [INFO] 👉 [OPTIONS] /api/auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T05:12:57.502Z] [INFO] ✓ [OPTIONS] /api/auth/register → 204 (14ms)
+[2026-02-09T05:12:57.506Z] [INFO] 👉 [POST] /api/auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T05:12:57.856Z] [INFO] ✓ [POST] /register → 201 (350ms)
+[2026-02-09T05:13:20.712Z] [INFO] 👉 [OPTIONS] /api/auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T05:13:20.725Z] [INFO] ✓ [OPTIONS] /api/auth/register → 204 (13ms)
+[2026-02-09T05:13:20.730Z] [INFO] 👉 [POST] /api/auth/register {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T05:13:20.989Z] [INFO] ✓ [POST] /register → 201 (259ms)
