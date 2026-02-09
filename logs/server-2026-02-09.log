@@ -1,0 +1,92 @@
+[2026-02-09T04:26:01.204Z] [WARN] ⚠️  MISSING ENV VARIABLES: MONGO_URI, JWT_SECRET
+[2026-02-09T04:26:01.243Z] [WARN] CURRENT ENV: {
+  "MONGO_URI": "❌ MISSING",
+  "JWT_SECRET": "❌ MISSING",
+  "FRONTEND_URL": "not set",
+  "NODE_ENV": "not set"
+}
+[2026-02-09T04:26:01.247Z] [WARN] Server will start but may fail on API calls
+[2026-02-09T04:26:01.281Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:26:01.282Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:26:01.283Z] [INFO]   GET → /health
+[2026-02-09T04:26:01.284Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:26:01.284Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:26:01.285Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:26:01.286Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:26:01.286Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:26:01.287Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:26:01.287Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:26:01.287Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:26:01.288Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:26:01.288Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:26:01.289Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:26:01.289Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:26:01.293Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:3001     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:27:10.986Z] [INFO] 👉 [GET] /health {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) W"
+}
+[2026-02-09T04:27:10.994Z] [INFO] ✓ [GET] /health → 200 (8ms)
+[2026-02-09T04:27:24.946Z] [INFO] 👉 [GET] /health {
+  "ip": "::1",
+  "userAgent": "axios/1.13.4"
+}
+[2026-02-09T04:27:24.948Z] [INFO] ✓ [GET] /health → 200 (2ms)
+[2026-02-09T04:27:24.957Z] [INFO] 👉 [POST] /api/auth/register {
+  "ip": "::1",
+  "userAgent": "axios/1.13.4"
+}
+[2026-02-09T04:27:24.995Z] [ERROR] ✓ [POST] /register → 409 (38ms)
+[2026-02-09T04:27:25.001Z] [INFO] 👉 [POST] /api/auth/login {
+  "ip": "::1",
+  "userAgent": "axios/1.13.4"
+}
+[2026-02-09T04:27:25.140Z] [INFO] ✓ [POST] /login → 200 (139ms)
+[2026-02-09T04:41:19.394Z] [WARN] ⚠️  MISSING ENV VARIABLES: MONGO_URI, JWT_SECRET
+[2026-02-09T04:41:19.396Z] [WARN] CURRENT ENV: {
+  "MONGO_URI": "❌ MISSING",
+  "JWT_SECRET": "❌ MISSING",
+  "FRONTEND_URL": "not set",
+  "NODE_ENV": "not set"
+}
+[2026-02-09T04:41:19.396Z] [WARN] Server will start but may fail on API calls
+[2026-02-09T04:41:19.428Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:41:19.428Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:41:19.429Z] [INFO]   GET → /health
+[2026-02-09T04:41:19.430Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:41:19.430Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:41:19.431Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:41:19.431Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:41:19.431Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:41:19.432Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:41:19.432Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:41:19.433Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:41:19.434Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:41:19.434Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:41:19.435Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:41:19.435Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:41:19.439Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:3001     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:42:02.312Z] [INFO] 👉 [GET] / {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) W"
+}
+[2026-02-09T04:42:02.315Z] [ERROR] 🔴 404 NOT FOUND: GET /
+[2026-02-09T04:42:02.316Z] [ERROR] Headers: {
+  "user-agent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7462",
+  "host": "localhost:3001",
+  "connection": "Keep-Alive"
+}
+[2026-02-09T04:42:02.317Z] [ERROR] Available routes: /health, ^\/api\/auth\//register, ^\/api\/auth\//login, ^\/api\/data\//, ^\/api\/data\//update, ^\/api\/messages\//inbox, ^\/api\/messages\//gov-inbox, ^\/api\/messages\//send, ^\/api\/messages\//mark-read/:messageId, ^\/api\/messages\//:messageId, ^\/api\/forecasts\//, ^\/api\/forecasts\//broadcast, ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:42:02.324Z] [ERROR] ✓ [GET] / → 404 (12ms)

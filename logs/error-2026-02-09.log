@@ -1,0 +1,9 @@
+[2026-02-09T04:27:24.995Z] [ERROR] ✓ [POST] /register → 409 (38ms)
+[2026-02-09T04:42:02.315Z] [ERROR] 🔴 404 NOT FOUND: GET /
+[2026-02-09T04:42:02.316Z] [ERROR] Headers: {
+  "user-agent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.7462",
+  "host": "localhost:3001",
+  "connection": "Keep-Alive"
+}
+[2026-02-09T04:42:02.317Z] [ERROR] Available routes: /health, ^\/api\/auth\//register, ^\/api\/auth\//login, ^\/api\/data\//, ^\/api\/data\//update, ^\/api\/messages\//inbox, ^\/api\/messages\//gov-inbox, ^\/api\/messages\//send, ^\/api\/messages\//mark-read/:messageId, ^\/api\/messages\//:messageId, ^\/api\/forecasts\//, ^\/api\/forecasts\//broadcast, ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:42:02.324Z] [ERROR] ✓ [GET] / → 404 (12ms)

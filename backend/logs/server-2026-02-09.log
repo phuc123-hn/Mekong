@@ -1,0 +1,283 @@
+[2026-02-09T04:15:18.993Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:15:18.995Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:15:18.997Z] [INFO]   GET → /health
+[2026-02-09T04:15:18.997Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:15:18.998Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:15:18.999Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:15:18.999Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:15:19.000Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:15:19.000Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:15:19.001Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:15:19.001Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:15:19.002Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:15:19.003Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:15:19.004Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:15:19.005Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:15:19.011Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:15:42.088Z] [INFO] 👉 [GET] /health {
+  "ip": "::1",
+  "userAgent": "axios/1.13.4"
+}
+[2026-02-09T04:15:42.097Z] [INFO] ✓ [GET] /health → 200 (9ms)
+[2026-02-09T04:15:42.107Z] [INFO] 👉 [POST] /api/auth/register {
+  "ip": "::1",
+  "userAgent": "axios/1.13.4"
+}
+[2026-02-09T04:15:42.295Z] [INFO] ✓ [POST] /register → 201 (188ms)
+[2026-02-09T04:15:42.298Z] [INFO] 👉 [POST] /api/auth/login {
+  "ip": "::1",
+  "userAgent": "axios/1.13.4"
+}
+[2026-02-09T04:15:42.418Z] [INFO] ✓ [POST] /login → 200 (121ms)
+[2026-02-09T04:16:11.703Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:16:11.708Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:16:11.711Z] [INFO]   GET → /health
+[2026-02-09T04:16:11.713Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:16:11.716Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:16:11.718Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:16:11.719Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:16:11.720Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:16:11.721Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:16:11.722Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:16:11.722Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:16:11.723Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:16:11.724Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:16:11.724Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:16:11.725Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:16:11.730Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:16:15.266Z] [INFO] 👉 [GET] / {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T04:16:15.268Z] [ERROR] 🔴 404 NOT FOUND: GET /
+[2026-02-09T04:16:15.270Z] [ERROR] Headers: {
+  "host": "localhost:5000",
+  "connection": "keep-alive",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-user": "?1",
+  "sec-fetch-dest": "document",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-US,en;q=0.9",
+  "cookie": "connect.sid=s%3AeqVaILHVAKPw3iAw6JkKEXhNI9K2_nHg.u%2FUOqi3pO2JZ5PXD3izgBkuEbBYkkNUdFle7pLmlD4Q; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInJvbGUiOiJHT1ZFUk5NRU5UIiwiaWF0IjoxNzcwMTExOTk1LCJleHAiOjE3NzA3MTY3OTV9.qf5Q79_kr-EU5DuMPMjIQRKjlwCTkVUS9H4cy03uqIQ"
+}
+[2026-02-09T04:16:15.273Z] [ERROR] Available routes: /health, ^\/api\/auth\//register, ^\/api\/auth\//login, ^\/api\/data\//, ^\/api\/data\//update, ^\/api\/messages\//inbox, ^\/api\/messages\//gov-inbox, ^\/api\/messages\//send, ^\/api\/messages\//mark-read/:messageId, ^\/api\/messages\//:messageId, ^\/api\/forecasts\//, ^\/api\/forecasts\//broadcast, ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:16:15.283Z] [ERROR] ✓ [GET] / → 404 (17ms)
+[2026-02-09T04:16:15.437Z] [INFO] 👉 [GET] /favicon.ico {
+  "ip": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+}
+[2026-02-09T04:16:15.602Z] [ERROR] 🔴 404 NOT FOUND: GET /favicon.ico
+[2026-02-09T04:16:15.608Z] [ERROR] Headers: {
+  "host": "localhost:5000",
+  "connection": "keep-alive",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0",
+  "sec-ch-ua": "\"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"144\", \"Microsoft Edge\";v=\"144\"",
+  "sec-ch-ua-mobile": "?0",
+  "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+  "sec-fetch-site": "same-origin",
+  "sec-fetch-mode": "no-cors",
+  "sec-fetch-dest": "image",
+  "referer": "http://localhost:5000/",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-US,en;q=0.9",
+  "cookie": "connect.sid=s%3AeqVaILHVAKPw3iAw6JkKEXhNI9K2_nHg.u%2FUOqi3pO2JZ5PXD3izgBkuEbBYkkNUdFle7pLmlD4Q; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInJvbGUiOiJHT1ZFUk5NRU5UIiwiaWF0IjoxNzcwMTExOTk1LCJleHAiOjE3NzA3MTY3OTV9.qf5Q79_kr-EU5DuMPMjIQRKjlwCTkVUS9H4cy03uqIQ"
+}
+[2026-02-09T04:16:15.615Z] [ERROR] Available routes: /health, ^\/api\/auth\//register, ^\/api\/auth\//login, ^\/api\/data\//, ^\/api\/data\//update, ^\/api\/messages\//inbox, ^\/api\/messages\//gov-inbox, ^\/api\/messages\//send, ^\/api\/messages\//mark-read/:messageId, ^\/api\/messages\//:messageId, ^\/api\/forecasts\//, ^\/api\/forecasts\//broadcast, ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:16:15.622Z] [ERROR] ✓ [GET] /favicon.ico → 404 (185ms)
+[2026-02-09T04:18:56.660Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:18:56.664Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:18:56.666Z] [INFO]   GET → /health
+[2026-02-09T04:18:56.667Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:18:56.669Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:18:56.670Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:18:56.670Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:18:56.671Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:18:56.672Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:18:56.674Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:18:56.676Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:18:56.677Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:18:56.678Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:18:56.681Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:18:56.683Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:18:56.699Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:20:41.186Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:20:41.191Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:20:41.192Z] [INFO]   GET → /health
+[2026-02-09T04:20:41.193Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:20:41.194Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:20:41.196Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:20:41.197Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:20:41.198Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:20:41.198Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:20:41.199Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:20:41.200Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:20:41.201Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:20:41.201Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:20:41.203Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:20:41.204Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:20:41.217Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:22:28.062Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:22:28.064Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:22:28.065Z] [INFO]   GET → /health
+[2026-02-09T04:22:28.065Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:22:28.066Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:22:28.066Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:22:28.067Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:22:28.067Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:22:28.067Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:22:28.068Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:22:28.068Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:22:28.069Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:22:28.069Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:22:28.069Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:22:28.069Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:22:28.075Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:23:46.139Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:23:46.147Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:23:46.150Z] [INFO]   GET → /health
+[2026-02-09T04:23:46.151Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:23:46.152Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:23:46.157Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:23:46.165Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:23:46.167Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:23:46.169Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:23:46.170Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:23:46.173Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:23:46.174Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:23:46.177Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:23:46.179Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:23:46.181Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:23:46.194Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:27:52.289Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:27:52.293Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:27:52.294Z] [INFO]   GET → /health
+[2026-02-09T04:27:52.295Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:27:52.296Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:27:52.298Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:27:52.299Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:27:52.299Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:27:52.301Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:27:52.302Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:27:52.305Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:27:52.306Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:27:52.307Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:27:52.307Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:27:52.309Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:27:52.319Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:31:58.615Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:31:58.775Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:31:58.786Z] [INFO]   GET → /health
+[2026-02-09T04:31:58.792Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:31:58.795Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:31:58.803Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:31:58.806Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:31:58.811Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:31:58.814Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:31:58.820Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:31:58.824Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:31:58.829Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:31:58.830Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:31:58.832Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:31:58.836Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:31:58.848Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:35:17.851Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:35:17.856Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:35:17.858Z] [INFO]   GET → /health
+[2026-02-09T04:35:17.860Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:35:17.861Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:35:17.862Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:35:17.863Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:35:17.864Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:35:17.866Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:35:17.868Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:35:17.869Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:35:17.870Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:35:17.871Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:35:17.872Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:35:17.873Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:35:17.882Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
+[2026-02-09T04:49:06.788Z] [INFO] ✅ Server middleware initialized
+[2026-02-09T04:49:06.796Z] [INFO] 📋 Registered routes:
+[2026-02-09T04:49:06.799Z] [INFO]   GET → /
+[2026-02-09T04:49:06.800Z] [INFO]   GET → /health
+[2026-02-09T04:49:06.802Z] [INFO]   POST → ^\/api\/auth\//register
+[2026-02-09T04:49:06.803Z] [INFO]   POST → ^\/api\/auth\//login
+[2026-02-09T04:49:06.805Z] [INFO]   GET → ^\/api\/data\//
+[2026-02-09T04:49:06.806Z] [INFO]   POST → ^\/api\/data\//update
+[2026-02-09T04:49:06.807Z] [INFO]   GET → ^\/api\/messages\//inbox
+[2026-02-09T04:49:06.809Z] [INFO]   GET → ^\/api\/messages\//gov-inbox
+[2026-02-09T04:49:06.813Z] [INFO]   POST → ^\/api\/messages\//send
+[2026-02-09T04:49:06.822Z] [INFO]   POST → ^\/api\/messages\//mark-read/:messageId
+[2026-02-09T04:49:06.834Z] [INFO]   DELETE → ^\/api\/messages\//:messageId
+[2026-02-09T04:49:06.856Z] [INFO]   GET → ^\/api\/forecasts\//
+[2026-02-09T04:49:06.872Z] [INFO]   POST → ^\/api\/forecasts\//broadcast
+[2026-02-09T04:49:06.911Z] [INFO]   GET → ^\/api\/forecasts\//:phenomenon
+[2026-02-09T04:49:06.927Z] [INFO] 
+╔════════════════════════════════════════╗
+║   DELTA STRESS LENS - BACKEND API      ║
+║   ✅ Running on http://localhost:5000     ║
+║   📝 Logs: C:\Users\VivoBook\Documents\mekong\web\Backup2\Mekong Delta\backend\logs        ║
+╚════════════════════════════════════════╝
+  
